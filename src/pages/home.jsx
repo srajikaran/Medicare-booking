@@ -8,6 +8,7 @@ import icon03 from "../assets/images/icon03.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/about/about";
+import ServiceList from "../components/services/serviceList";
 
 const home = () => {
     return <>
@@ -169,6 +170,24 @@ const home = () => {
         </div>
      </section>
     <About/>
+
+    {/* Service section start  */}
+    <section>
+        <div className="container">
+            <div className="xl:w-[470px] mx-auto">
+                <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center mt-20">Our medical services</h2>
+                 <p className="text_para text-center">
+                 Medicare is a government national health insurance program in the United States.
+                 
+                 </p>
+            </div>
+
+            <ServiceList />
+            
+        </div>
+    </section>
+
+    {/* Service section end */}
     </>
 };
 
