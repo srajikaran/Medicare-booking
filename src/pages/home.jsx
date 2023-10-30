@@ -5,6 +5,7 @@ import heroImg03 from "../assets/images/hero_img03.jpg";
 import icon01 from "../assets/images/icon01.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
+import featureImg from "../assets/images/feature-img.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/about/about";
@@ -188,6 +189,61 @@ const home = () => {
     </section>
 
     {/* Service section end */}
+
+    {/* features section */}
+    <section>
+        <div className="container">
+            <div className="flex items-center justify-between flex-col lg:flex-row">
+                {/* feature content */}
+                <div className="xl:w-[670px]">
+                    <h2 className="heading text-[30px] font-[700] ml-[50px]"> Get virtual treatment <br/> anytime.</h2>
+              <ul className="pl-4 ml-[50px]">
+
+                <li className="text_para mt-4">
+                    1. Shedule the appointment directly.
+                </li>
+
+                <li className="text_para mt-4">
+                    2. Search for your physician here, and contact their office.
+                </li>
+
+                <li className="text_para mt-4">
+                    3. View our physician who are accepting new patiens, use the 
+                    online sheduling tool to select an appointment time.
+                </li>
+
+              </ul>
+              <Link to = '/'>
+              <button className="bg-blue-600 py-2 px-6 text-white font-[600] h-[44px] flex
+              items-center justify-center rounded-[50px] mr-[200px] mt-4 ml-[50px]" >Learn More</button>
+              </Link>
+                </div>
+
+                {/* feature img */}
+                <div className="relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
+                    <img src={featureImg} className="w-3/4" alt="" /> 
+                    <div className="w-[150px] lg:w-[248px] bg-white absolute bottom-[50px] left-0
+                    md:bottom-[100px] md:left-5 z-20 p-2 pb-3 lg:pt-4 lg:px-4 lg:pb-[26px] rounded-[10px]"> 
+                       <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-[6px] lg:gap-3">
+                            <p className="text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 
+                            text-headingColor font-[600]"> Tue,24 </p>
+
+                            <p className="text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 
+                            text-headingColor font-[400]"> 10.00 </p>
+
+                        </div>
+
+                       </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    {/* feature section end */}
     </>
 };
 
