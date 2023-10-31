@@ -12,6 +12,8 @@ import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/about/about";
 import ServiceList from "../components/services/serviceList";
+import DoctorList from "../components/doctors/doctorList";
+
 
 const home = () => {
     return <>
@@ -268,6 +270,24 @@ const home = () => {
         </div>
     </section>
     {/* feature section end */}
+
+    {/* our greate doctors */}
+    <section>
+        <div className="container">
+        <div className="xl:w-[470px] mx-auto">
+                <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center mt-20">Our great doctors</h2>
+                 <p className="text_para text-center">
+                 Medicare is a government national health insurance program in the United States.
+                 
+                 </p>
+            </div>
+            <DoctorList/>
+
+        </div>
+    </section>
+
+    {/* our greate doctors */}
+
     </>
 };
 
