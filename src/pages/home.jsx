@@ -8,11 +8,14 @@ import icon03 from "../assets/images/icon03.png";
 import featureImg from "../assets/images/feature-img.png";
 import videoIcon from "../assets/images/video-icon.jpeg";
 import avatarIcon from "../assets/images/avatar-icon.jpg";
+import faqImg from "../assets/images/faq-img.jpg";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/about/about";
 import ServiceList from "../components/services/serviceList";
 import DoctorList from "../components/doctors/doctorList";
+import FaqList from "../components/faq/faqList";
+
 
 
 const home = () => {
@@ -273,7 +276,7 @@ const home = () => {
 
     {/* our greate doctors */}
     <section>
-        <div className="container">
+        <div className="container ml-[30px]">
         <div className="xl:w-[470px] mx-auto">
                 <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center mt-20">Our great doctors</h2>
                  <p className="text_para text-center">
@@ -286,7 +289,25 @@ const home = () => {
         </div>
     </section>
 
-    {/* our greate doctors */}
+    {/* our greate doctors end*/}
+
+    {/* aq section */}
+
+    <section>
+        <div className="container mt-[100px]">
+            <div className="flex justify-between gap-[50px] lg:gap-0 ml-[50px]">
+                <div className="w-1/2 hidden md:block"><img src={faqImg} alt="" />
+                </div>
+                <div className="w-full md:w-1/2">
+                    <h2 className="heading text-[26px] font-[700]">Most questions by our beloved patients</h2>
+                    <FaqList/>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+     {/* aq section end */}
 
     </>
 };
